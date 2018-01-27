@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+
+         >
+
+        <ImageView
+            android:id="@+id/drapeau_imageView"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            tools:text="Drapeau"
+            />
+
+        <TextView
+            android:id="@+id/pays_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/drapeau_imageView"
+            android:textSize="20sp"
+            tools:text="Pays"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+
+            />
+        <TextView
+            android:id="@+id/capitale_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/drapeau_imageView"
+            android:layout_below="@+id/pays_textView"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            tools:text="Capitale"
+            />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+     >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/world_map"
+
+        />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/Afrique"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Afrique"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:onClick="ecranAfrique"
+           />
+
+        <Button
+            android:id="@+id/Europe"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="EUROPE"
+            android:layout_below="@+id/Afrique"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:onClick="ecranEurope"
+            />
+
+        <Button
+            android:id="@+id/AmeriqueNC"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="AMÉRIQUE DU NORD ET CENTRALE"
+            android:layout_below="@+id/Europe"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:onClick="ecranANC"
+            />
+
+        <Button
+            android:id="@+id/AmeriqueSud"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="AMÉRIQUE DU SUD"
+            android:layout_below="@+id/AmeriqueNC"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:onClick="ecranAS"
+            />
+
+        <Button
+            android:id="@+id/Asie"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="ASIE"
+            android:layout_below="@+id/AmeriqueSud"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:onClick="ecranAsie"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
